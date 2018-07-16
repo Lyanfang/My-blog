@@ -1,16 +1,10 @@
-FROM registry.saas.hand-china.com/tools/debian:jessie 
+FROM registry.saas.hand-china.com/tools/hugo:v0.37.1
 
-COPY lyfblog/ /myblog/
+COPY lyfblog/ /usr/share/blog
 
-ADD hugo_0.44_Linux-64bit.deb /tmp/hugo.deb
+WORKDIR /usr/share/blog
 
-RUN dpkg -i /tmp/hugo.deb \ 
-	&& rm /tmp/hugo.deb
-
-WORKDIR myblog/
+# 暴露端口
+EXPOSE 1313
 
 CMD hugo
-
-CMD  hugo server --baseUrl=192.168.99.100 --bind=0.0.0.0
-
-EXPOSE 1313
