@@ -1,0 +1,47 @@
+baseurl = "http://www.example.com"
+title = "Blog"
+
+theme = "coder"
+
+languagecode = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "LYF"
+    #keywords = "blog,developer,personal"
+    #info = "My Blog"
+    avatarurl = "images/avatar.jpg"
+    #footercontent = "Enter a text here."
+
+    hideCredits = false
+    hideCopyright = false
+
+
+    # Custom CSS
+    custom_css = []
+
+    # RTL support
+    rtl = false
+
+[[params.social]]
+    name = "Github"
+    weight = 1
+    url = "https://github.com/Lyanfang"
+
+[[menu.main]]
+    name = "Journals"
+    weight = 1
+    url  = "/journals/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"
+
