@@ -1,1 +1,1 @@
-docker build -t linyanfangblog:v1.0 .
+docker build -t lyfblog:v1.0 .
